@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+h1 {
+  text-align: center;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/011/127/621/large_2x/beautiful-sea-waves-and-white-sand-beach-in-the-tropical-island-soft-waves-of-blue-ocean-on-sandy-beach-background-from-top-view-from-drones-concept-of-relaxation-and-travel-on-vacation-free-photo.jpg'); 
+  background-size: cover; 
+  background-position: center center; 
+  font-family: "Monoton";
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2.4rem 0;
+  color: white; 
+}
+
+.add-form {
+  background-color: #A8CCC9;
+  padding: 2.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+h3 {
+  margin-right: 1.6rem;
+  font-size: 2.4rem;
+}
+
+button,
+select,
+input {
+  background-color: #fff0c7;
+  color: #5a3e2b;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.2rem 3.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.add-form button {
+  text-transform: uppercase;
+  background-color: hsl(237, 100%, 81%);
+  color:#ffffff;
+}
+
+.list {
+  background-color: #B3D6C6;
+  color: #ffffff;
+  padding: 3.2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.actions button,
+.list select {
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0.8rem;
+}
+
+.list ul {
+  list-style: none;
+  width: 90%;
+  max-width: 1200px;
+  overflow: auto;
+  display: grid;
+  gap: 2rem; 
+  justify-content: center;
+  align-content: start;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1.2rem;
+  background-color: #4657c6; 
+  padding: 2rem;
+  border-radius: 1rem; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: #e5771f;
+}
+
+.list li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 10rem; 
+  color: #ffffff;
+  background-color: #f3eae4;
+  transition: background-color 0.3s ease;
+}
+
+.stats {
+  background-color: #000000;
+  text-align: center;
+  font-weight: 700;
+  padding: 2.8rem 0;
+}
